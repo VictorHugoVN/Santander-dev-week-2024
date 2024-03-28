@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="me.dio.sdw.application.ListChampionsUseCasesIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-28T14:16:40" hostname="COELHONEGRO23" time="1.002">
+  <properties/>
+  <testcase name="testListChampions()" classname="me.dio.sdw.application.ListChampionsUseCasesIntegrationTest" time="1.002"/>
+  <system-out><![CDATA[11:16:37.484 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [me.dio.sdw.application.ListChampionsUseCasesIntegrationTest]: ListChampionsUseCasesIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:16:37.618 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration me.dio.sdw.SantanderDevWeek2024Application for test class me.dio.sdw.application.ListChampionsUseCasesIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2024-03-28T11:16:38.275-03:00  INFO 31592 --- [santander-dev-week-2024] [    Test worker] s.a.ListChampionsUseCasesIntegrationTest : Starting ListChampionsUseCasesIntegrationTest using Java 21.0.2 with PID 31592 (started by victo in C:\Users\victo\OneDrive\Documentos\java\santander dev week 2024\santander-dev-week-2024)
+2024-03-28T11:16:38.279-03:00  INFO 31592 --- [santander-dev-week-2024] [    Test worker] s.a.ListChampionsUseCasesIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2024-03-28T11:16:39.108-03:00  INFO 31592 --- [santander-dev-week-2024] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-03-28T11:16:39.130-03:00  INFO 31592 --- [santander-dev-week-2024] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2024-03-28T11:16:39.450-03:00  INFO 31592 --- [santander-dev-week-2024] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=de329e36-d533-3e71-8bb2-5c81ff0f65a1
+2024-03-28T11:16:39.735-03:00  INFO 31592 --- [santander-dev-week-2024] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-28T11:16:39.964-03:00  INFO 31592 --- [santander-dev-week-2024] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:sdw2024 user=SA
+2024-03-28T11:16:39.966-03:00  INFO 31592 --- [santander-dev-week-2024] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-28T11:16:40.818-03:00  INFO 31592 --- [santander-dev-week-2024] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:sdw2024'
+2024-03-28T11:16:40.937-03:00  INFO 31592 --- [santander-dev-week-2024] [    Test worker] s.a.ListChampionsUseCasesIntegrationTest : Started ListChampionsUseCasesIntegrationTest in 3.08 seconds (process running for 4.641)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\victo\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.12\be4984cb6fd1ef1d11f218a648889dfda44b8a15\byte-buddy-agent-1.14.12.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
