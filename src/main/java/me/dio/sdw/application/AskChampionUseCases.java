@@ -13,9 +13,11 @@ public record AskChampionUseCases(ChampionsRepository repository) {
         Champions champion = repository.findById(championId)
                 .orElseThrow(() -> new ChampionNotFoundException(championId));
 
+        String championContext = champion.generatedContentByQuestion(question);
         //TODO: Evoluir a lógica de negócio para considerar a integração com IAs generativas.
 
-        return "";
+
+        return championContext;
     }
 
 }

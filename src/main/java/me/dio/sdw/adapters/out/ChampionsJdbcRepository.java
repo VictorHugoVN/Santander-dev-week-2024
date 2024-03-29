@@ -14,10 +14,10 @@ import java.util.Optional;
 public class ChampionsJdbcRepository implements ChampionsRepository {
 
     @Autowired
-    private final JdbcTemplate JdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
     private final RowMapper<Champions> rowMapper;
     public ChampionsJdbcRepository(JdbcTemplate jdbcTemplate) {
-        this.JdbcTemplate = jdbcTemplate;
+        this.jdbcTemplate = jdbcTemplate;
         this.rowMapper = (rs, rowNum) -> new Champions(
                 rs.getLong("id"),
                 rs.getString("name"),
@@ -29,13 +29,13 @@ public class ChampionsJdbcRepository implements ChampionsRepository {
 
     @Override
     public List<Champions> findAll() {
-        return JdbcTemplate.query("SELECT * FROM CHAMPIONS", rowMapper);
+        return jdbcTemplate.query("SELECT * FROM CHAMPIONS", rowMapper);
     }
 
     @Override
     public Optional<Champions> findById(Long id) {
         String sql = "SELECT * FROM CHAMPIONS WHERE id = ?";
-        Champions champion =  JdbcTemplate.queryForObject(sql, rowMapper);
-        return Optional.ofNullable(champion);
+        List<Champions> champions =  jdbcTemplate.query(sql, rowMapper, id);
+        return champions.stream().findFirst();
     }
 }
